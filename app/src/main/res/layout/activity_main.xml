@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/navy"
+    android:gravity="left">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="30dp"
+        tools:context="com.example.dom.justjava.MainActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:text="Math Quiz"
+            android:textColor="@color/white"
+            android:textSize="28sp" />
+
+        <TextView
+            style="@style/heading1"
+            android:layout_weight="1"
+            android:text="@string/q1"/>
+
+        <TextView
+            style="@style/text1"
+            android:layout_marginBottom="16dp"
+            android:text="5 + 4 = ?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q1a"
+                style="@style/text1"
+                android:text="7"/>
+            <RadioButton
+                android:id="@+id/q1b"
+                style="@style/text1"
+                android:text="8"/>
+            <RadioButton
+                android:id="@+id/q1c"
+                style="@style/text1"
+                android:text="9"/>
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/heading1"
+            android:layout_weight="1"
+            android:text="@string/q2"/>
+
+        <TextView
+            style="@style/text1"
+            android:layout_marginBottom="16dp"
+            android:text="14 / 7 = ?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q2a"
+                style="@style/text1"
+                android:text="1"/>
+            <RadioButton
+                android:id="@+id/q2b"
+                style="@style/text1"
+                android:text="2"/>
+            <RadioButton
+                android:id="@+id/q2c"
+                style="@style/text1"
+                android:text="3"/>
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/heading1"
+            android:layout_weight="1"
+            android:text="@string/q3"/>
+
+        <TextView
+            style="@style/text1"
+            android:layout_marginBottom="16dp"
+            android:text="75 - 40 = ?" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q3a"
+                style="@style/text1"
+                android:text="35"/>
+            <RadioButton
+                android:id="@+id/q3b"
+                style="@style/text1"
+                android:text="45"/>
+            <RadioButton
+                android:id="@+id/q3c"
+                style="@style/text1"
+                android:text="71"/>
+
+        </RadioGroup>
+
+        <TextView
+            style="@style/heading1"
+            android:layout_weight="1"
+            android:text="@string/q4"/>
+
+        <TextView
+            style="@style/text1"
+            android:layout_marginBottom="16dp"
+            android:text="21 x 4 = ?" />
+
+        <CheckBox
+            android:id="@+id/q4a"
+            style="@style/text1"
+            android:text="80 + 4"/>
+
+        <CheckBox
+            android:id="@+id/q4b"
+            style="@style/text1"
+            android:text="780 / 9"/>
+
+        <CheckBox
+            android:id="@+id/q4c"
+            style="@style/text1"
+            android:text="80 + 15 - 11"/>
+
+        <TextView
+            style="@style/heading1"
+            android:layout_weight="1"
+            android:text="@string/q5"/>
+
+        <TextView
+            style="@style/text1"
+            android:layout_marginBottom="16dp"
+            android:text="(71 + 4) / 5 = ?" />
+
+        <EditText
+            android:id="@+id/q5"
+            style="@style/text1"
+            android:hint="Enter numerical answer"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="24dp"
+            android:layout_weight=".5"
+            android:padding="10dp"
+            android:background="@drawable/button_bg"
+            android:onClick="displayToast"
+            android:text="Check Answers"
+            android:textColor="@android:color/white" />
+
+    </LinearLayout>
+</ScrollView>

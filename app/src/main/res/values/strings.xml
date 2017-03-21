@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Algebra App</string>
+    <string name="q1">Question 1</string>
+    <string name="q2">Question 2</string>
+    <string name="q3">Question 3</string>
+    <string name="q4">Question 4</string>
+    <string name="q5">Question 5</string>
+</resources>
